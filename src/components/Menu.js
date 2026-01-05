@@ -1,4 +1,4 @@
-/* Create the menus */
+/* Create the menu */
 
 import { useContext } from "react";
 import { LanguageContext } from "../context/LangCont";
