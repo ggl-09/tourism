@@ -2,13 +2,15 @@ import {useContext, useEffect, useState} from "react";
 import hero1 from "../media/images/bosc.jpg";
 import hero2 from "../media/images/7fontsParc.jpeg";
 import hero3 from "../media/images/barnuria.jpg";
-import hero4 from "../media/images/Albareda.jpeg";
-import hero5 from "../media/images/castell_baix.JPG"
+import hero4 from "../media/images/stroc.jpeg";
+import hero5 from "../media/images/Albareda.jpeg";
+import hero6 from "../media/images/castell_baix.JPG"
+import hero7 from "../media/images/snow.jpeg";
 
 import { texts } from "../data/texts"
 import {LanguageContext} from "../context/LangCont";
 
-const images = [hero1, hero2, hero3, hero4, hero5];
+const images = [hero1, hero2, hero3, hero4, hero5, hero6, hero7];
 
 function Header() {
     const [current, setCurrent] = useState(0);
