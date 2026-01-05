@@ -1,8 +1,11 @@
+/* Places section to get just a glimpse of the places to visit */
+
 import { Link } from "react-router-dom";
 import {useContext, useRef} from "react";
 import { texts } from "../data/texts";
 import { LanguageContext } from "../context/LangCont";
 
+// Image imports
 import elRoser from "../media/images/colegi_esg.jpg";
 import churchImg from "../media/images/church.jpg";
 import seven from "../media/images/7fontsParc.jpeg";

@@ -1,8 +1,11 @@
+/* Makes the main logic of the detail page of the activities */
+
 import { useParams, Link } from "react-router-dom";
 import { useContext } from "react";
 import { LanguageContext } from "../context/LangCont";
 import { texts } from "../data/texts";
-import { imageMap } from "../data/imageMap";
+import { imageMap } from "../data/imageMap";    // for the images
+import { audioMap } from "../data/audioMap";    // for the audios
 
 function ActivityDetail() {
     const { id } = useParams();
@@ -11,7 +14,6 @@ function ActivityDetail() {
     const info = texts[lang].activitiesInfo[id];
 
     if (!info) return <h2>Activity not found</h2>;
-
 
     return (
         <article className="detail-page">
@@ -22,15 +24,30 @@ function ActivityDetail() {
                 const {
                     text,
                     imageKey,
+                    audioKey,
                     imageLayout = "full",
                     imageSize = "medium",
                     imageRatio = "horizontal"
                 } = section;
 
+                const audioSrc = audioKey && audioMap[audioKey];
+
                 return (
-                    <section key={index} className={`detail-section layout-${imageLayout}`}>
+                    <section
+                        key={index}
+                        className={`detail-section layout-${imageLayout}`}
+                    >
                         <div className="text-content">
                             <p>{text}</p>
+
+                            {audioSrc && (
+                                <div className="audio-container">
+                                    <audio controls>
+                                        <source src={audioSrc} type="audio/mpeg" />
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            )}
                         </div>
 
                         {imageKey && imageMap[imageKey] && (
@@ -44,8 +61,6 @@ function ActivityDetail() {
                     </section>
                 );
             })}
-
-
         </article>
     );
 }

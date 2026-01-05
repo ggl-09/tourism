@@ -1,5 +1,3 @@
-// src/data/imageMap.js
-
 // ===== PLACES =====
 import churchExt from "../media/images/esglesia.jpg";
 import retaule from "../media/images/retaule.jpg"
@@ -50,7 +48,7 @@ export const imageMap = {
     modernism_route_house: modRoute,
     mod_cap: modRoute2,
     mills_path: millPath,
-    aviation_field: aviationField, /* TALLAR LA IMATGE DE SOTA (EL NOM) */
+    aviation_field: aviationField,
     caramelles_act: caramellesAct,
     caramelles_avi: caramellesAV,
     stately_home_exterior: houseView

@@ -2,6 +2,8 @@ export const texts = {
     en: {
         title: "Discover Sant Julià de Vilatorta",
         tagline: "A peaceful rural destination surrounded by nature",
+        media: "The atmosphere",
+        mediaText: "Life moves slowly. Days are shaped by nature and the rythm of the country side.",
 
         menu: {
             experience: "Experience",
@@ -16,6 +18,7 @@ export const texts = {
         add: "Add to visit plan",
         plan: "Your visit plan",
         emptyCart: "Select places, activities or accomodations to build your visit.",
+        back: "Back",
 
         // ===== PLACES =====
         placesInfo: {
@@ -191,8 +194,9 @@ export const texts = {
                     },
                     {
                         text:
-                            "The Mills Route follows the water that once powered the local economy, passing by the remains of ancient flour mills.",
-                        imageKey: "mills_stream",
+                            "The Mills Route follows the water that once powered the local economy, passing by the remains of ancient flour mills.\n" +"" +
+                            "Can you imagine walking and hearing the river flow just beside you?",
+                        audioKey: "riverSound"
                     }
                 ]
             },
@@ -229,7 +233,8 @@ export const texts = {
                     {
                         text:
                             "A band of musicians also follows the groups of singers. Usually, you will able to hear a trumpet, a horn, a trombone, a clarinet, a double bass, a fiscorn and a transverse flute. The musicians also sport the typical dress code but instead of black, they are dressed in red.\n" +
-                            "The young kids from town, during Palm Sunday, also get out on the streets ans sing along the caramellaires."
+                            "The young kids from town, during Palm Sunday, also get out on the streets ans sing along the caramellaires.",
+                        audioKey: "goigsRoser"
                     }
                 ]
             },
@@ -262,6 +267,9 @@ export const texts = {
     es: {
         title: "Descubre Sant Julià de Vilatorta",
         tagline: "Un destino rural tranquilo rodeado de naturaleza",
+        media: "La atmosfera",
+        mediaText: "La vida se mueve despcio. Los días se adaptan a la natura y al ritmo del mundo rural.",
+
         menu: {
             experience: "Experiencia",
             activities: "Qué hacer",
@@ -269,11 +277,14 @@ export const texts = {
             plan: "Tu visita",
             stay: "Comer / Dormir"
         },
+
+
         footer: "Un pequeño destino rural centrado en el turismo tranquilo",
         learn: "Saber más",
         add: "Añadir al plan de visita",
-        plan: "Tu plan de visita",
-        emptyCart: "Seleccione actividades, lugares o alojamiento para crear su visita.s",
+        plan: "Su plan de visita",
+        emptyCart: "Seleccione actividades, lugares o alojamiento para crear su visita.",
+        back: "Atrás",
 
         placesInfo: {
             "old-church": {
@@ -401,8 +412,9 @@ export const texts = {
                         imageSize: "large"
                     },
                     {
-                        text: "La Ruta de los Molinos sigue el agua que una vez impulsó la economía local, pasando por los restos de antiguos molinos de harina.",
-                        imageKey: "mills_stream"
+                        text: "La Ruta de los Molinos sigue el agua que una vez impulsó la economía local, pasando por los restos de antiguos molinos de harina.\n" +
+                            "¿Se imaginan caminar y escuchar el río justo a su lado?",
+                        audioKey: "riverSound"
                     }
                 ]
             },
@@ -426,7 +438,9 @@ export const texts = {
                         imageKey: "caramelles_avi"
                     },
                     {
-                        text: "Una banda de músicos también sigue a los grupos de cantores. Normalmente, podrás oír una trompeta, una trompa, un trombón, un clarinete, un contrabajo, un fiscorno y una flauta travesera. Los músicos también lucen el código de vestimenta típico pero en lugar de negro, visten de rojo.\nLos jóvenes del pueblo, durante el Domingo de Ramos, también salen a las calles y cantan junto a los caramellaires."
+                        text: "Una banda de músicos también sigue a los grupos de cantores. Normalmente, podrás oír una trompeta, una trompa, un trombón, un clarinete, un contrabajo, un fiscorno y una flauta travesera. Los músicos también lucen el código de vestimenta típico pero en lugar de negro, visten de rojo.\n" +
+                            "Los jóvenes del pueblo, durante el Domingo de Ramos, también salen a las calles y cantan junto a los caramellaires.",
+                        audioKey: "goigsRoser"
                     }
                 ]
             },
@@ -456,6 +470,9 @@ export const texts = {
     ca: {
         title: "Descobreix Sant Julià de Vilatorta",
         tagline: "Un destí rural tranquil envoltat de natura",
+        media: "L'atmosfera",
+        mediaText: "La vida es mou a poc a poc. Els dies s'adapten a la natura i al ritme de la vida rural.",
+
         menu: {
             experience: "Experiència",
             activities: "Activitats",
@@ -466,8 +483,9 @@ export const texts = {
         footer: "Un petit poble rural orientat al turisme tranquil",
         learn: "Saber més",
         add: "Afegir al pla de visita",
-        plan: "El teu pla de visita",
+        plan: "El seu pla de visita",
         emptyCart: "Seleccioni activitats, llocs o allotjament per crear la seva visita.",
+        back: "Enrere",
 
         placesInfo: {
             "old-church": {
@@ -595,8 +613,9 @@ export const texts = {
                         imageSize: "large"
                     },
                     {
-                        text: "La Ruta dels Molins segueix l'aigua que un cop va impulsar l'economia local, passant per les restes d'antics molins de farina.",
-                        imageKey: "mills_stream"
+                        text: "La Ruta dels Molins segueix l'aigua que un cop va impulsar l'economia local, passant per les restes d'antics molins de farina." +
+                            "\nS'imaginen caminar i sentir el riu just al costat vostre?",
+                        audioKey: "riverSound"
                     }
                 ]
             },
@@ -609,7 +628,7 @@ export const texts = {
                         imageLayout: "side-right",
                         imageSize: "large"
                     },
-                    { text: "Per als amants del ciclisme, aquesta ruta també es pot fer en bicicleta de muntanya." }
+                    { text: "Pels amants del ciclisme, aquesta ruta també es pot fer en bicicleta de muntanya." }
                 ]
             },
             "caramelles": {
@@ -620,7 +639,8 @@ export const texts = {
                         imageKey: "caramelles_avi"
                     },
                     {
-                        text: "Una banda de músics també segueix els grups de cantaires. Normalment, podreu sentir una trompeta, una trompa, un trombó, un clarinet, un contrabaix, un fiscorn i una flauta travessera. Els músics també llueixen el codi de vestimenta típic però en lloc de negre, van vestits de vermell.\nEls joves del poble, durant el Diumenge de Rams, també surten als carrers i canten amb els caramellaires."
+                        text: "Una banda de músics també segueix els grups de cantaires. Normalment, podreu sentir una trompeta, una trompa, un trombó, un clarinet, un contrabaix, un fiscorn i una flauta travessera. Els músics també llueixen el codi de vestimenta típic però en lloc de negre, van vestits de vermell.\nEls joves del poble, durant el Diumenge de Rams, també surten als carrers i canten amb els caramellaires.",
+                        audioKey: "goigsRoser"
                     }
                 ]
             },

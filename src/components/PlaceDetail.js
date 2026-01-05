@@ -1,6 +1,7 @@
+/* Makes the main logic of the detail page of the places to visit */
+
 import { useParams, Link } from "react-router-dom";
 import { useContext } from "react";
-import { addItem } from "react";
 import { LanguageContext } from "../context/LangCont";
 import { texts } from "../data/texts";
 import { imageMap } from "../data/imageMap";

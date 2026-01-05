@@ -1,7 +1,10 @@
+/* Section to know where one can eat or sleep */
+
 import { useContext, useRef } from "react";
 import { LanguageContext } from "../context/LangCont";
 import { texts } from "../data/texts";
 
+// Image imports
 import manyana from "../media/images/manyana.jpg";
 import albareda from "../media/images/albaredaHR.jpg";
 import marti from "../media/images/marti.jpg"
@@ -15,7 +18,7 @@ const staysImages = {
     kairos
 };
 
-// non-language data
+// Rating and price
 const staysMeta = {
     manyana: { price: 2, stars: 1 },
     albareda: { price: 4, stars: 4 },

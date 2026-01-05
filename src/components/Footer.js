@@ -4,11 +4,12 @@ import { texts } from "../data/texts";
 
 function Footer() {
     const { lang } = useContext(LanguageContext);
+    const t = texts[lang];
 
     return (
         <footer className="footer">
-            <p>{texts[lang].footer}</p>
-            <p>© 2025 My Town Tourism</p>
+            <p>{t.footer}</p>
+            <p>© 2026 Sant Julià de Vilatorta</p>
         </footer>
     );
 }

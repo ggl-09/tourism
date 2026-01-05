@@ -1,3 +1,5 @@
+/* File to create the cart so people cans make their day plan */
+
 import { LanguageContext } from "../context/LangCont";
 import { texts } from "../data/texts"
 import {useContext} from "react";

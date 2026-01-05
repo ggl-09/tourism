@@ -1,8 +1,11 @@
+/* Activities section to get just a glimpse of the activity */
+
 import { Link } from "react-router-dom";
 import {useContext, useRef} from "react";
 import { LanguageContext } from "../context/LangCont";
 import { texts } from "../data/texts"
 
+// Image imports
 import barNuria from "../media/images/barnuria.jpg";
 import mill from "../media/images/molin.jpg";
 import plane from "../media/images/aviation.jpg";
